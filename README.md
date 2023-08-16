@@ -5,12 +5,10 @@ This program will allow you to toggle touchscreen on Windows 10+ machine. Run to
 Before you start program you need to locate your touchscreen device in Device Manager. Follow next steps:
 
 1. Open Device Manager
-   Open search and search for device manager, and then click on it. (Alternativly: Windows+R -> "devmgmt.msc")
 
 2. Open "Human Interface Devices" category.
 
 3. Double-Click on "HID-compliant touch screen" device.
-   If you don't see it it means your device doesn't have touchscreen.
 
 4. Go to "Details" tab.
 
@@ -24,3 +22,4 @@ variable tloc should look like this:
 tloc = "HID\ELAN9008&COL01\\5&2BED5342&0&0000"
 
 **Note**: If there's error in code replace each "\" with "\\", **only in tloc variable**.
+**Note**: If you don't see "HID-compliant touch screen" means your device doesn't have touchscreen.

@@ -1,7 +1,7 @@
 # ToggleTouchscreen
 This program will allow you to toggle touchscreen on Windows 10+ machine. Run touchscreen.py to start the program.
 
-# Important!
+# Setup
 Before you start program you need to locate your touchscreen device in Device Manager. Follow next steps:
 
 1. Open Device Manager
@@ -26,3 +26,5 @@ tloc = "HID\ELAN9008&COL01\\5&2BED5342&0&0000"
 **Note**: If there's error in code replace each "\\" with "\\\\", **only in tloc variable**.
 
 **Note**: If you don't see "HID-compliant touch screen" means your device doesn't have touchscreen.
+
+**Tip**: You can add the program to run function (WIN + R) using 3rd party programs.

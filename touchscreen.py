@@ -1,13 +1,13 @@
 import os
 from win32comext.shell import shell as shell
 
-tloc = "HID\\ELAN9008&COL01\\5&2BED5342&0&0000"
+tloc = "" # Enter your device instance id here!
 
 output = os.popen(f'pnputil /enum-devices /instanceid "{tloc}"').read()
 
-if output.find("Disabled")==-1: #enabled
+if output.find("Disabled")==-1: # Touchscreen enabled already, so turn it off
     commands = f'pnputil /disable-device "{tloc}"'
     shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
-else: #disabled
+else: # Touchscreen disabled, so turn it on
     commands = f'pnputil /enable-device "{tloc}"'
     shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)

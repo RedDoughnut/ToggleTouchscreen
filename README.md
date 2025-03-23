@@ -20,9 +20,8 @@ Before you start program you need to locate your touchscreen device in Device Ma
 
 variable tloc should look like this: 
 ```
-tloc = "HID\ELAN9008&COL01\\5&2BED5342&0&0000"
+tloc = "HID\\ELAN9008&COL01\\5&2BED5342&0&0000"
 ```
-
-**Note**: If there's error in code replace each "\\" with "\\\\", **only in tloc variable**.
+**Make sure to replace every `\` with `\\`!**
 
 **Tip**: You can add the program to run on WIN + R menu using 3rd party applications.
